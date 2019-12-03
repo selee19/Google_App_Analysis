@@ -1,0 +1,137 @@
+body {
+    background-color: #2c313b !important;
+
+    font-family: 'Roboto', sans-serif !important;
+}
+.sidenav {
+  width: 200px;
+  z-index: 1;
+  background:   white;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border-left: 1px gray solid ;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);  
+  height:10%;
+}
+.bg-white {
+    background: #fff !important;
+}   
+.shadow {
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1),-1px 0 2px rgba(0,0,0,0.05);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1),-1px 0 2px rgba(0,0,0,0.05);
+    margin: 0px !important;
+}
+.box {
+    border-right: 1px solid #eee;
+    padding: 15px 0;
+    align-items: center !important;
+    display: flex !important;
+}   
+.box-title {
+    font-size: 1.1em;
+font-weight: 300;
+color: #777;
+margin: 0 20px;
+}
+.box-number {
+    font-size: 2.8em;
+font-weight: 300;
+}
+section {
+    height:10%;
+    padding-bottom: 50px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2f333e;
+  display: block;
+  cursor: pointer;
+}
+.counts {
+background: white;
+margin-bottom:10px;
+
+margin-top : 5px;
+}
+.sidenav a:hover {
+  color: #064579;
+  text-decoration: none;
+}
+
+.title {
+    background: #2f333e;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    position: relative;
+    border-radius: 0;
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    z-index: 10;
+    padding-left: 10px;
+    padding-right: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.axis {
+    font: 10px sans-serif;
+  }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #fff;
+   
+    shape-rendering: crispEdges;
+  }
+  .axis .tick text {
+      fill:white
+  }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+}
+.graph-title{
+    font-size:22px;
+    border-bottom:0.5px #2f333e solid;
+    padding:10px;
+    color: #fff;
+}
+.graph-title2{
+    font-size:20px;
+    padding:10px;
+    color: #fff;
+}
+.data-tooltip {
+    z-index: 10000;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 #ffffff;
+        border: 1px solid #6F257F;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        color: black;
+        font: 12px sans-serif;
+        padding: 14px;
+        text-align: left;
+    }
+    .tooltip-title {
+        font: 18px sans-serif;
+        text-align: center;
+        width: 100%;
+        border-bottom: 0.1rem solid gray;
+        margin-bottom: 1.5px;
+    }
+    .tooltip-count {
+        font-size: 18px;
+         display: inline;
+         padding-top: 0.5rem;
+    }
+.fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
+
+
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}

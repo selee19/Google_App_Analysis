@@ -1,0 +1,124 @@
+// FIT5147 Data visualization Final Project 
+  Connected: file, bar.js, script.js, cloud.js, horisontalBar.js, pie.js 
+  Author: SeoneuiLee (27136868)
+  Last update: 10. 06. 2019
+  //
+
+
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  crossorigin="anonymous">
+            <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/admin/1-4-5/vendor/font-awesome/css/font-awesome.min.css">
+            
+        </head>
+    <body>
+            <div class="">
+             <div class="title"><strong>Google Play Store App Analysis Dashboard</strong></div>
+             <div class="row" >
+             <div class="sidenav hidden-lg-down col-lg-2 col-sm-4">
+                    
+                    <a  onClick="showDiv('category')">Category</a>
+                    <a  onClick="showDiv('tag')">Word Cloud</a>
+                    
+            </div>
+        
+                  
+            <div id="category" class="main col-lg-9 col-sm-7 fade-in">
+                   
+                            <div class="counts ">
+                              <div class="row shadow">
+                                <!-- Item -->
+                                <div class="col-xl-3 col-sm-6">
+                                  <div class="box">
+                                    <div class="icon bg-violet"><i class="icon-user"></i></div>
+                                    <div class="box-title"><span>Total App</span>
+                                    </div>
+                                    <div class="box-number "><strong id="total-app">25</strong></div>
+                                  </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                        <div class="box">
+                                          <div class="icon bg-violet"><i class="icon-user"></i></div>
+                                          <div class="box-title"><span>Total Cateogy</span>
+                                          </div>
+                                          <div class="box-number"><strong id="total-category">25</strong></div>
+                                        </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                        <div class="box">
+                                          <div class="icon bg-violet"><i class="icon-user"></i></div>
+                                          <div class="box-title"><span>Total Install</span>
+                                          </div>
+                                          <div class="box-number"><strong id="total-install">25</strong></div>
+                                        </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6" style="padding:0px;">
+                                <div class="box">
+                                  <div class="icon bg-violet"><i class="icon-user"></i></div>
+                                  <div class="box-title"><span>Total Reviews</span>
+                                  </div>
+                                  <div class="box-number"><strong id="total-review">25</strong></div>
+                                </div>
+                              </div>
+                              </div>
+                            </div>
+                           
+                            <div>
+                                <div style="background-color: #3f5175;">
+                                    <div class="graph-title">Top 10 Categories</div>
+                                <div id="bar"></div>
+                                
+                                </div>
+                                <div id="focus"></div>
+                                <div style="background-color: #3f5175;">
+                                    <div class="graph-title">Category Selected : <label id="categoryName"></label></div>
+                                <div class="row" style="padding:15px;">
+                                  
+                                  <div class="col-xl-4" >
+                                    <div class="graph-title2"> Genre</div>
+                                    <div id="pie"> </div>
+                                  </div>
+                                  <div class="col-xl-2" id="">
+                                    <div class="graph-title2"> &nbsp</div>
+                                    <div id="legends" style="padding-top:10px"> </div>
+                                  </div>
+                                <div class="col-xl-6" id="">
+                                  <div class="graph-title2"> Overall rating</div>
+                                  <div id="h-bar"> </div>
+                                </div>
+                              </div>
+                                </div>
+                            </div>
+                                         
+            </div>  
+            <div id="tag" class="main col-lg-9 col-sm-7 fade-in">
+              <div style="background-color: #3f5175;">
+              <div class="graph-title">Select Category : 
+                <select  onChange="drawWord(this.options[this.selectedIndex].value)" id="category-selection">
+                  
+                </select>
+              </div>
+              <div class="graph-title2">Word Cloud</div> 
+              <div id="word" style="height:500px;"></div>
+              <div class="graph-title2">TOP 10 Word</div> 
+              <div id="word-bar"></div>
+            </div>
+            
+              </div>
+            </div>  
+        </div>    
+    </body>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+<script src="https://bl.ocks.org/jyucsiro/raw/767539a876836e920e38bc80d2031ba7/518fd43a5efe941b38a54988f6560410aa7963cb/cloud.js"></script>
+<script src="cloud.js"></script>
+<script src="script.js"></script>
+<script src="bar.js"></script>
+<script src="pie.js"></script>
+<script src="horizontalBar.js"></script>
+
+<p style="color:white;">@SeoneuiLee_FIT5147 Data visualization </p>
+</html>
